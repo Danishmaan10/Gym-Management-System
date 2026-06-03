@@ -1,0 +1,199 @@
+/* ================= GLOBAL ================= */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+  display: flex;
+}
+
+/* ================= SIDEBAR ================= */
+.sidebar {
+  width: 230px;
+  height: 100vh;
+  background: #111827;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  color: #22c55e;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 12px;
+  margin: 8px 0;
+  background: #1f2937;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebar li:hover {
+  background: #22c55e;
+  color: black;
+}
+
+/* sidebar text */
+.sidebar p {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-top: 10px;
+}
+
+/* ================= MAIN CONTENT ================= */
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+  width: 100%;
+}
+
+/* ================= TOPBAR ================= */
+.topbar {
+  background: #1f2937;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 22px;
+  color: #22c55e;
+}
+
+/* ================= DASHBOARD BANNER ================= */
+.banner img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* ================= CARDS ================= */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #1f2937;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  background: #111827;
+}
+
+/* ================= FORM ================= */
+.form-box {
+  margin: 15px 0;
+}
+
+.form-box input {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  width: 200px;
+}
+
+button {
+  padding: 10px 15px;
+  background: #22c55e;
+  border: none;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #16a34a;
+  color: white;
+}
+
+/* ================= TABLE ================= */
+table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+  background: #111827;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th {
+  background: #1f2937;
+  padding: 12px;
+  text-align: left;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #1f2937;
+}
+
+/* ================= CONTENT SECTIONS ================= */
+.content-section {
+  display: none;
+}
+
+.content-section.active {
+  display: block;
+}
+
+/* ================= NOTES / EXTRA BLOCKS ================= */
+.note {
+  background: #1f2937;
+  padding: 10px;
+  margin: 5px 0;
+  border-left: 4px solid #22c55e;
+}
+
+.extra {
+  background: #0b1220;
+  padding: 8px;
+  margin: 4px 0;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 180px;
+  }
+
+  .main-content {
+    margin-left: 190px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .form-box input {
+    width: 100%;
+  }
+}
